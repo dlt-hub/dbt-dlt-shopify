@@ -92,18 +92,13 @@ dbt_<pipeline-name>/
 Execute the dbt models to transform the raw Shopify data into useful tables:
 
 ```sh
-dbt run
+dbt build
 ```
 
 >You can use the 'run_shopify_dbt.py' script to execute your dbt transformations and load the results into a 
 >new dataset named `<original-dataset>_transformed` and runs the dbt tests.To use, please ensure you configure 
 >your dlt pipeline name and destination correctly.
 
-To check for issues, run the dbt tests:
-
-```sh
-dbt test
-```
 
 ### Customization
 While this package provides a solid foundation, you can customize it to suit your specific needs:
