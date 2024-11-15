@@ -95,7 +95,7 @@ Execute the dbt models to transform the raw Shopify data into useful tables:
 dbt build
 ```
 
->You can use the 'run_shopify_dbt.py' script to execute your dbt transformations and load the results into a 
+>You can use the "run_shopify_dbt.py" script to execute your dbt transformations and load the results into a 
 >new dataset named `<original-dataset>_transformed` and runs the dbt tests.To use, please ensure you configure 
 >your dlt pipeline name and destination correctly.
 
