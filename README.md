@@ -114,12 +114,12 @@ for data model which can be further modified as required.
 
 1. The schema of data modelled above using dlt-dbt-generator:
     
-   ![picture1](https://storage.googleapis.com/dlt-blog-images/shopify-dlt-dbt-package.png)
+   ![picture1](https://storage.googleapis.com/dlt-blog-images/shopify_dlt_dbt_dim_model.png)
 
 > Please note that this is a starting template for your data model and is not the final product. It is advised to customize the
 > data model as per your needs.
 
-Here's the link to the DB diagram: [link](https://dbdiagram.io/d/shopify-dlt-dbt-package-66fb8f4df9b1444815fc3c88).
+Here's the link to the DB diagram: [link](https://dbdiagram.io/d/shopify_dlt_dbt_v1-5-67499c01e9daa85aca20eea9).
 
 #### Optional: Advanced Usage (Generator and Licensing)
 

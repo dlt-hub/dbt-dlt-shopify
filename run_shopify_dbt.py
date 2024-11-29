@@ -6,9 +6,9 @@ if __name__ == "__main__":
     into your main dlt runner file and execute the transformation right after your
     pipeline.run(...) command
     """
-    p = dlt.pipeline(pipeline_name="shopify_tst", destination="duckdb") # Configure your destination
+    p = dlt.pipeline(pipeline_name="shopify", destination="bigquery")
     venv = dlt.dbt.get_venv(p)
-    dbt = dlt.dbt.package(p, "dbt_shopify_tst", venv=venv)
+    dbt = dlt.dbt.package(p, "dbt_shopify", venv=venv)
 
     # run transformations
     models = dbt.run_all(
@@ -18,5 +18,5 @@ if __name__ == "__main__":
         destination_dataset_name=p.dataset_name + "_transformed",
     )
 
-    # run tests 
+    # run tests
     dbt.test(destination_dataset_name=p.dataset_name + "_transformed")
